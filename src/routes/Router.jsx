@@ -8,6 +8,7 @@ import ToyDetails from "../pages/ToyDetails";
 import AuthLayout from "../layout/AuthLayout";
 import Profile from "../pages/Profile";
 import PrivateRoute from "./PrivateRoute";
+import Error from "../pages/Error";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,11 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
     ],
+  },
+
+  {
+    path: "/*",
+    element: <Error>Error404</Error>,
   },
 ]);
 

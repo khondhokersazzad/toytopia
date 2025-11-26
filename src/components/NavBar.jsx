@@ -24,7 +24,7 @@ const NavBar = () => {
             toyTopia
           </NavLink>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex font-semibold text-[16px]">
           <ul className="menu menu-horizontal px-1">
             <li>
               <NavLink to="/">Home</NavLink>
