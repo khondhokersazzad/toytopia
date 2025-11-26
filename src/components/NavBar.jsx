@@ -18,9 +18,11 @@ const NavBar = () => {
       <div className="flex justify-center items-center py-5 bg-gradient-to-r from-pink-200 via-yellow-200 to-blue-200">
         <img src={toytopia} alt="" height="250" width="250" />
       </div>
-      <div className="navbar shadow-sm bg-gradient-to-r from-pink-100 via-yellow-100 to-blue-100
+      <div
+        className="navbar shadow-sm bg-gradient-to-r from-pink-100 via-yellow-100 to-blue-100
 
-">
+"
+      >
         <div className="navbar-start">
           <NavLink className="btn btn-ghost text-xl text-blue-500" to="/">
             toyTopia
@@ -29,15 +31,42 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex font-semibold text-[16px]">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-purple-700 font-bold underline underline-offset-4"
+                    : "hover:text-purple-700"
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to="/all-toys">All Toys</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-purple-700 font-bold underline underline-offset-4"
+                    : "hover:text-purple-700"
+                }
+                to="/all-toys"
+              >
+                All Toys
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to="/profile">My Profile</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-purple-700 font-bold underline underline-offset-4"
+                    : "hover:text-purple-700"
+                }
+                to="/profile"
+              >
+                My Profile
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -78,7 +107,7 @@ const NavBar = () => {
           </div>
           {user?.uid ? (
             <div>
-              <div  className="avatar mr-3" title={user?.displayName}>
+              <div className="avatar mr-3" title={user?.displayName}>
                 <div className="ring-primary ring-offset-base-100 w-12 rounded-full ring-2 ring-offset-2">
                   <img src={user?.photoURL} />
                 </div>
