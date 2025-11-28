@@ -1,16 +1,57 @@
-# React + Vite
+# ToyTopia – Kids Toy Store Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Purpose
+ToyTopia is a vibrant and playful online toy marketplace built using React.  
+The purpose of this project is to demonstrate:
+- React SPA development  
+- Firebase Authentication  
+- Protected routes  
+- UI/UX design with a kids theme  
+- Loading and displaying toy data from a local JSON file  
+- Fully responsive layout  
+- Deployment with environment variable security  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Link
+🔗 **Live Website: https://toytopia-store-100.netlify.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⭐ Key Features
+- Colorful **Swiper Slider** on the home page  
+- **Popular Toys** section using custom JSON data  
+- **Shop by Age Group** filtering (0–2, 3–5, 6–8, 9–12)  
+- **Toy Details Page** (protected)  
+- Email/Password Login + Google Login  
+- Registration with password validation  
+- **My Profile Page** with user info   
+- Attractive **Newsletter Section**  
+- Fully **responsive** design  
+- 404 Not Found page  
+- Navbar with user image, hover name & logout button  
+- Firebase **onAuthStateChanged** for persistent login  
+- Environment variables for securing Firebase keys  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack Used
+- **React** (Vite)  
+- **Firebase Authentication**  
+- **React Router**  
+- **TailwindCSS**  
+- **Swiper.js**   
+- **JavaScript (ES6+)**  
+- **JSON (Local Data)**  
+
+---
+
+## 📦 NPM Packages Used
+- react  
+- react-router 
+- firebase  
+- swiper  
+- tailwindcss  
+- react-toastify
+
+---
