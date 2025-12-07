@@ -58,8 +58,9 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path: "/auth/forget/:userEmail",
-        element: <Forget></Forget>,
+        path: "/auth/forget",
+        element: <Forget />,
+        children: [{ path: ":userEmail", element: <Forget /> }],
       },
     ],
   },

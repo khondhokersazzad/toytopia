@@ -28,7 +28,7 @@ const Login = () => {
       .then((res) => {
         const user = res.user;
         setUser(user);
-        // navigate(location.state);
+        //navigate(location.state);
         navigate('/profile');
         toast.success("Sign in successfull");
         
@@ -80,6 +80,7 @@ const Login = () => {
                   name="email"
                   className="input"
                   placeholder="Email"
+                  required
                   onChange={(e) => {
                     return setUserEmail(e.target.value);
                   }}
